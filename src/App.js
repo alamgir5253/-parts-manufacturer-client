@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login'
 import MyPortfolio from './pages/MyPortfolio/MyPortfolio';
 import Navbar from './pages/Navbar/Navbar';
+import NotFound from './pages/NotFound/NotFound';
 import SignUp from './pages/SignUp/SignUp'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/myportfolio' element={<MyPortfolio />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </div>
