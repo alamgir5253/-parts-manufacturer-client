@@ -3,9 +3,9 @@ import React from 'react';
 const Blog = () => {
   return (
     <section>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-        <div className='mx-auto ml-4'>
-          <h2> How will you improve the performance of a React Application</h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div >
+          <h2 className='p-4 text-white font-bold bg-secondary rounded'> How will you improve the performance of a React Application</h2>
           <h5>there are some wey to  improve the performance of a React Application</h5>
           <ul>
             <li> 1. Splitting the large bundle data using ( lazy, suspense component) is one of the solution  to improve the performance of a React Application</li>
@@ -24,7 +24,7 @@ const Blog = () => {
           </ul>
         </div>
         <div>
-          <h2>
+          <h2 className='p-4 text-white font-bold bg-secondary rounded'>
             How does prototypical inheritance work
           </h2>
           <p>
@@ -32,7 +32,7 @@ const Blog = () => {
           </p>
         </div>
         <div>
-          <h2>
+          <h2 className='p-4 text-white font-bold bg-secondary rounded'>
             Why you do not set the state directly in React
           </h2>
           <p>
@@ -44,7 +44,7 @@ const Blog = () => {
           <p>
             Unit testing is a component of test-driven development (TDD). A unit test typically comprises of three stages: plan, cases and scripting and the unit test itself. In the first step, the unit test is prepared and reviewed. The next step is for the test cases and scripts to be made, then the code is tested
           </p>
-          <h2>Why should write unit tests</h2>
+          <h2 className='p-4 text-white font-bold bg-secondary rounded'>Why should write unit tests</h2>
           <p>
          we should write unit tests because it reduces or prevents production bugs, increases developer productivity, encourages modular programming.
             Unit testing ensures that all code meets quality standards before it's deployed

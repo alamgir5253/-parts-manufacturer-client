@@ -8,6 +8,7 @@ import MyPortfolio from './pages/MyPortfolio/MyPortfolio';
 import Navbar from './pages/Navbar/Navbar';
 import NotFound from './pages/NotFound/NotFound';
 import SignUp from './pages/SignUp/SignUp'
+import RequireAuth from './shared/RequireAuth';
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/blog' element={<Blog />}></Route>
+        <Route path='/blog' element={
+        <RequireAuth>
+          <Blog />
+        </RequireAuth>}></Route>
         <Route path='/dashboard' element={<Dashboard />}></Route>
         <Route path='/myportfolio' element={<MyPortfolio />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
