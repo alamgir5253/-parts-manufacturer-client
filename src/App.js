@@ -12,7 +12,7 @@ import RequireAuth from './shared/RequireAuth';
 
 function App() {
   return (
-    <div>
+    <div className='max-w-7xl  mx-auto'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}></Route>

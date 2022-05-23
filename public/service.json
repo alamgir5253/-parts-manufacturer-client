@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "name": " Right Side Mirror",
+    "image": "https://i.ibb.co/X3610t3/side-Mirror.jpg",
+    "description": "High quality OEM style racing mirror High-impact ABS shell, steel shaft and glass mirror Easy to install, bolt directly into your stock mounting point Mirrors are available in both black or with a carbon fiber look",
+    "minOrder": 5,
+    "availableQuantity": 4,
+    "price": 200
+  },
+  {
+    "_id": 2,
+    "name": " Motorcycle Tire",
+    "image": "https://i.ibb.co/mcH1Dxm/Tayer.jpg",
+    "description": "Expanded size range fits a wide variety of older bikes and cruisers. Tread compound delivers excellent balance of mileage and grip. Front and rear tread patterns designed for outstanding water evacuation and wet grip. Bias-ply construction designed to deliver excellent load-carrying capacity as well as a smooth ride for maximum comfort.",
+    "minOrder": 2,
+    "availableQuantity": 10,
+    "price": 2000
+  },
+  {
+    "_id": 3,
+    "name": "Motorcycle Seats",
+    "image": "https://i.ibb.co/7kxhcT4/Seat.jpg",
+    "description": "Offers super clean, custom style with a high-rising wall that offers excellent back supportCut low to place the rider slightly lower and further back compared to stock Tapered passenger section provides a streamlined look",
+    "minOrder": 2,
+    "availableQuantity": 100,
+    "price": 1000
+  },
+  {
+    "_id": 4,
+    "name": "Motorcycle Handlebar",
+    "image": "https://i.ibb.co/mXnVSXR/Handlebar.jpg",
+    "description": "This motorcycle handlebar grip is compatible with Sur Ron Light Bee X and S electric dirt bike 7/8 left & 1 right grips.Left inner diameter: 22mm Right Internal Diameter: 24mm.",
+    "minOrder": 4,
+    "availableQuantity": 1000,
+    "price": 99
+  }
+]
