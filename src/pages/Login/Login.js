@@ -1,7 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../../Firebase.Init'
 const Login = () => {
+  // login with google 
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const HandleGoogleLogin = ()=>{
+    signInWithGoogle()
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="hero min-h-screen bg-base-200">
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -29,7 +49,7 @@ const Login = () => {
       <p className='text-xs mt-2 '>don't have an account? <Link className='text-info' to='/signup'>please signup</Link></p>
       </form>
       <div class="divider">OR</div>
-      <button class="btn btn-outline btn-secondary">Button</button>
+      <button onClick={HandleGoogleLogin} class="btn btn-outline btn-secondary">Button</button>
       </div>
     </div>
 </div>
