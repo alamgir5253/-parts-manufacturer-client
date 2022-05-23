@@ -41,7 +41,7 @@ const Footer = () => {
   </div>
 </footer>
 
-  <div class="footer footer-center p-4 bg-base-300 text-base-content">
+  <div className="footer footer-center p-4 bg-base-300 text-base-content">
     <p>Copyright © 2022 - All right reserved by alamgir hossain </p>
    
   </div>
