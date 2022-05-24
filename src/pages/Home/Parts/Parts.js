@@ -11,7 +11,7 @@ useEffect(()=>{
   return (
     <div>
       <h3 className=' font-bold text-4xl uppercase text-center'>parts section</h3>
-      <div className=''>
+      <div className='grid grid-cols-1 md:grid-cols-2'>
         {parts.map(part => <Part part={part}></Part>)}
       </div>
       

@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Part = ({ part}) => {
-  const {image,name, price,description,minOrder,availableQuantity} =part
+  const {_id,image,name, price,description,minOrder,availableQuantity} =part
+  const navigate = useNavigate()
+const ToPartDetail = id =>{
+navigate(`/part/${id}`)
+}
+
+
   return (
     <div class="card w-full mx-auto mb-4  shadow-xl">
   <figure class="px-10 pt-10">
@@ -14,7 +21,7 @@ const Part = ({ part}) => {
     <p className='text-secondary text-xl'><span>available Quantity</span> {availableQuantity}</p>
     <p className='text-neutral'><span>description</span> {description}</p>
     <div class="card-actions">
-      <button class="btn btn-primary">parches</button>
+      <button onClick={()=> ToPartDetail(_id)} class="btn btn-primary">parches</button>
     </div>
   </div>
 </div>
