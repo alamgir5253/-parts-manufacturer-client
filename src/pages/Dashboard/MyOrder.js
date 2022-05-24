@@ -15,9 +15,8 @@ const MyOrder = () => {
   },[user])
   return (
     <div>
-      <h1>my all order is {orders.length}</h1>
-      <div class="overflow-x-auto">
-  <table class="table table-compact w-full">
+      <div className="overflow-x-auto">
+  <table className="table table-compact w-full">
     <thead>
       <tr>
         <th></th> 
@@ -31,7 +30,7 @@ const MyOrder = () => {
     </thead> 
     <tbody>
      {
-       orders.map((order,index) => <tr>
+       orders.map((order,index) => <tr key={order._id}>
         <th>{index +1}</th> 
         <td>{order.user}</td> 
         <td>{order.email}</td> 
@@ -45,14 +44,14 @@ const MyOrder = () => {
      }
     </tbody> 
     <tfoot>
-      <tr>
+    <tr>
         <th></th> 
+        <th>user</th> 
+        <th>email</th> 
         <th>Name</th> 
-        <th>Job</th> 
-        <th>company</th> 
-        <th>location</th> 
-        <th>Last Login</th> 
-        <th>Favorite Color</th>
+        <th>quantity</th>
+        <th>phone</th> 
+        <th>address</th> 
       </tr>
     </tfoot>
   </table>

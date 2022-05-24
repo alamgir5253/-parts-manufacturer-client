@@ -34,9 +34,9 @@ function App() {
             <Dashboard />
           </RequireAuth>
         }>
-          <Route index element={<Review />}></Route>
+          <Route index element={<MyOrder />}></Route>
+          <Route path='review' element={<Review />}></Route>
           <Route path='myprofile' element={<MyProfile />}></Route>
-          <Route path='myorder' element={<MyOrder />}></Route>
         </Route>
         <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/login' element={<Login />}></Route>
