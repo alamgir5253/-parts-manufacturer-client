@@ -8,9 +8,9 @@ const SpecialSection = () => {
     <div className="hero-overlay bg-opacity-60"></div>
     <div className="hero-content py-20 text-center text-neutral-content">
       <div className="max-w-md">
-        <h1 className="mb-5 text-3xl font-bold">Take Our Best collection</h1>
+        <h1 className="mb-5 text-2xl md:text-3xl font-bold text-primary">Take Our Best collection</h1>
         <p className="mb-5">This Is Our Honer To Served You With Our best Capability</p>
-        <button className="btn btn-primary">Get Started</button>
+        <button className="btn text-white btn-primary">Get Started</button>
       </div>
     </div>
   </div>

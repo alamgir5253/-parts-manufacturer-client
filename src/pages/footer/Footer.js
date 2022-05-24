@@ -13,9 +13,9 @@ const Footer = () => {
     <div>
       <p className='mb-4'>social link</p>
     <div className='flex justify-center items-center text-3xl gap-4 '>
-      <FaFacebook className='hover:text-cyan-500 hover:rotate-360 hover:transition-[.5s]' />
-      <FaTwitter className='hover:text-cyan-500' />
-      <FaYoutube className='hover:text-cyan-500'/>
+      <FaFacebook className='hover:text-secondary' />
+      <FaTwitter className='hover:text-secondary' />
+      <FaYoutube className='hover:text-secondary'/>
     </div>
     </div>
   </div> 

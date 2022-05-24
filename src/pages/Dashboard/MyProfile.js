@@ -38,7 +38,7 @@ const MyProfile = () => {
     <div class="card flex-shrink-0   shadow-2xl bg-base-100">
       <div class="card-body">
         <form onSubmit={HandleProfile}>
-          <p className='text-center text-xl text-primary uppercase'>purchase Form</p>
+          <p className='text-center text-xl text-primary uppercase'>profile Form</p>
         <div class="form-control">
           <label class="label">
             <span class="label-text">name</span>
@@ -76,7 +76,7 @@ const MyProfile = () => {
           <input type="text" name='linkedin' placeholder='Enter Address' class="input input-bordered " />
         </div>
         <div class="form-control mt-6">
-          <button type='submit' class="btn btn-primary">purchase</button>
+          <button type='submit' class="btn btn-primary">submit</button>
         </div>
         </form>
       </div>
