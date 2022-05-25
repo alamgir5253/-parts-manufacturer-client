@@ -15,6 +15,7 @@ import NotFound from './pages/NotFound/NotFound';
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import MyOrder from './pages/Dashboard/MyOrder';
+import AllUser from './pages/Dashboard/AllUser';
 
 function App() {
   return (
@@ -37,7 +38,9 @@ function App() {
           <Route index element={<MyOrder />}></Route>
           <Route path='review' element={<Review />}></Route>
           <Route path='myprofile' element={<MyProfile />}></Route>
+          <Route path='alluser' element={<AllUser />}></Route>
         </Route>
+
         <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='*' element={<NotFound />}></Route>
