@@ -15,7 +15,14 @@ const UseToken = user =>{
         body: JSON.stringify(presentUser)
       })
       .then(res =>res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        console.log(data)
+        const accessToken = data.token
+        localStorage.setItem('access_token', accessToken)
+        setToken(accessToken)
+      })
+
+
       toast('inserted user to db')
       
 

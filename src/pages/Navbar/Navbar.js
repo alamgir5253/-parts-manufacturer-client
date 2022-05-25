@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const logout = () => {
     signOut(auth);
+    localStorage.removeItem('access_token')
   };
   return (
     <div className="navbar bg-base-100 mb-20">
@@ -23,7 +24,7 @@ const Navbar = () => {
         <li><NavLink to='/blog' className='mr-4'>Blog</NavLink></li>
         <li><NavLink to='myportfolio'>My Portfolio</NavLink></li>
         {user && <button  className='btn mr-4  btn-ghost'>{user?.displayName}</button>}
-        {user ?<><button className='btn mr-4 btn-ghost' onClick={logout}>signout</button> <button  className='btn mr-4  btn-ghost'>{user?.displayName}</button></> :<li><NavLink to='/login' className='mr-4'>Login</NavLink></li>}
+        {user ?<><button className='btn mr-4 btn-ghost' onClick={logout}>signout</button> </> :<li><NavLink to='/login' className='mr-4'>Login</NavLink></li>}
         <li><NavLink to='signup' className='mr-4'>SignUp</NavLink></li>
        
       </ul>
@@ -36,8 +37,9 @@ const Navbar = () => {
     <li><NavLink to='/'  className='mr-4'>Home</NavLink></li>
         <li><NavLink to='/blog' className='mr-4'>Blog</NavLink></li>
         <li><NavLink to='myportfolio'>My Portfolio</NavLink></li>
-        {user && <li><NavLink to='dashboard'>Dashboard</NavLink></li>}
-        {user ?<><button className='btn mr-4 btn-ghost' onClick={logout}>signout</button><button  className='btn mr-4 btn-ghost'>{user?.displayName}</button></> :<li><NavLink to='/login' className='mr-4'>Login</NavLink></li>}
+        {/* {user &&} */}
+        {user ?<> <li><NavLink to='dashboard'>Dashboard</NavLink></li><button className='btn mr-4 btn-ghost' onClick={logout}>signout</button></> :<li><NavLink to='/login' className='mr-4'>Login</NavLink></li>}
+        {user ? <button  className='btn mr-4 btn-ghost'>{user?.displayName}</button>: ''}
         <li><NavLink to='signup' className='mr-4'>SignUp</NavLink></li>
     </ul>
   </div>
