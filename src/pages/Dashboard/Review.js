@@ -10,7 +10,7 @@ const Review = () => {
       rating,
       review,
     }
-      fetch('http://localhost:5000/review',{
+      fetch('https://blooming-brook-62791.herokuapp.com/review',{
         method:'POST',
         headers:{
           'content-type': 'application/json'
@@ -25,7 +25,7 @@ const Review = () => {
 
 
   return (
-    <div>
+    <section className='mb-20'>
       <div class="card flex-shrink-1 max-w-sm mx-auto   shadow-2xl bg-base-100">
         <div class="card-body">
           <form onSubmit={HandleReview}>
@@ -49,7 +49,7 @@ const Review = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

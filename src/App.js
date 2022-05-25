@@ -18,6 +18,7 @@ import MyOrder from './pages/Dashboard/MyOrder';
 import AllUser from './pages/Dashboard/AllUser';
 import RequireAdmin from './shared/RequireAdmin';
 import AllOrders from './pages/Dashboard/AllOrders';
+import ManageParts from './pages/Dashboard/ManageParts';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='myprofile' element={<MyProfile />}></Route>
           <Route path='alluser' element={<RequireAdmin><AllUser /></RequireAdmin>}></Route>
           <Route path='allorder' element={<RequireAdmin><AllOrders /></RequireAdmin>}></Route>
+          <Route path='manageparts' element={<RequireAdmin><ManageParts /></RequireAdmin>}></Route>
         </Route>
 
         <Route path='/signup' element={<SignUp />}></Route>

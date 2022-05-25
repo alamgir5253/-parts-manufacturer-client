@@ -21,7 +21,7 @@ const MyProfile = () => {
       location,
       linkedin
     }
-      fetch('http://localhost:5000/profile',{
+      fetch('https://blooming-brook-62791.herokuapp.com/profile',{
         method:'POST',
         headers:{
           'content-type': 'application/json'
@@ -35,7 +35,8 @@ const MyProfile = () => {
 
   }
   return (
-    <div class="card flex-shrink-0   shadow-2xl bg-base-100">
+    <section  className='mb-20'>
+      <div class="card flex-shrink-0   shadow-2xl bg-base-100">
       <div class="card-body">
         <form onSubmit={HandleProfile}>
           <p className='text-center text-xl text-primary uppercase'>profile Form</p>
@@ -80,7 +81,8 @@ const MyProfile = () => {
         </div>
         </form>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

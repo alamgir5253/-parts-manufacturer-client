@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import Loading from '../../shared/loading/Loading'
 import User from './User';
 const AllUser = () => {
-  const {data: users, isLoading, refetch} = useQuery('user', ()=> fetch('http://localhost:5000/user',{
+  const {data: users, isLoading, refetch} = useQuery('user', ()=> fetch('https://blooming-brook-62791.herokuapp.com/user',{
     method:"GET",
     headers:{
       'authorization': `bearer ${localStorage.getItem('access_token')}` 
@@ -17,7 +17,7 @@ const AllUser = () => {
   }
 
   return (
-    <section>
+    <section className='mb-20'>
       <div class="overflow-x-auto">
   <table class="table w-full">
     <thead  >

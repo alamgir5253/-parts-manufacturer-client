@@ -18,12 +18,12 @@ const Dashboard = () => {
   <div className="drawer-side ">
     <label htmlFor="SideBar" className="drawer-overlay"></label> 
     <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-      {/* <!-- Sidebar content here --> */}
-      <li><Link to='/dashboard'>My Order</Link></li>
+      {<li><Link to='/dashboard'>My Order</Link></li>}
       <li><Link to='/dashboard/myprofile'>My Profile</Link></li>
       <li><Link to='/dashboard/review'>Review</Link></li>
       {admin && <li><Link to='/dashboard/alluser'>All User</Link></li>}
       {admin && <li><Link to='/dashboard/allorder'>All Orders</Link></li>}
+      {admin && <li><Link to='/dashboard/manageparts'>Manage Parts</Link></li>}
     </ul>
   
   </div>

@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react';
 const AllOrders = () => {
   const [orders , setOrders] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:5000/allorder')
+
+    fetch('https://blooming-brook-62791.herokuapp.com/allorder')
     .then(res => res.json())
     .then(data => setOrders(data))
   },[])
   return (
-    <div>
+    <section className='mb-20'>
       
       <div class="overflow-x-auto w-full">
   <table class="table w-full">
@@ -48,7 +49,7 @@ const AllOrders = () => {
       {/* <div>
         {orders.map(order => )}
       </div> */}
-    </div>
+    </section>
   );
 };
 

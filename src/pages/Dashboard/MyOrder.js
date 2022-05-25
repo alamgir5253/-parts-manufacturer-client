@@ -11,7 +11,7 @@ const MyOrder = () => {
   useEffect(()=>{
   
     if(user){
-      fetch(`http://localhost:5000/order?email=${user.email}`,{
+      fetch(`https://blooming-brook-62791.herokuapp.com/order?email=${user.email}`,{
         method:"GET",
         headers:{
           'authorization': `bearer ${localStorage.getItem('access_token')}` 
@@ -33,7 +33,7 @@ const MyOrder = () => {
     }
   },[user])
   return (
-    <div>
+    <section className='mb-20'>
       <div className="overflow-x-auto">
   <table className="table table-compact w-full">
     <thead>
@@ -76,7 +76,7 @@ const MyOrder = () => {
   </table>
 </div>
       
-    </div>
+    </section>
   );
 };
 

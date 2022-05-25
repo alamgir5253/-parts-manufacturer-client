@@ -13,7 +13,7 @@ const PartDetail = () => {
   const [part, setPart] = useState({})
   useEffect(()=>{
     
-    const url =  `http://localhost:5000/parts/${partid}`
+    const url =  `https://blooming-brook-62791.herokuapp.com/parts/${partid}`
     fetch(url).then(res => res.json()).then(data => setPart(data))
   },[])
 
@@ -34,7 +34,7 @@ const PartDetail = () => {
        address,
        quantity,
      }
-     fetch('http://localhost:5000/order',{
+     fetch('https://blooming-brook-62791.herokuapp.com/order',{
        method:'POST',
        headers:{
          'content-type': 'application/json'
