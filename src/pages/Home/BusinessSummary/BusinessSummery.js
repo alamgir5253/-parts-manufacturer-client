@@ -9,7 +9,7 @@ const BusinessSummery = () => {
         <p className='text-lg mb-4'>Some Example Of Your Business</p>
         <div className='h-1 w-20 rounded-md bg-secondary mx-auto'></div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center'>
+      <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center'>
         <div className='mx-auto mb-4'>
           <h2><BsFillEmojiSmileFill className='text-secondary text-8xl mb-4 mx-auto' /></h2>
           <p className='font-bold text-2xl md:text-4xl text-accent'>1000+</p>

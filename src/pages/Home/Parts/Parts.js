@@ -12,7 +12,7 @@ useEffect(()=>{
     <div className='mb-20'>
       <h3 className=' font-bold text-2xl text-primary md:text-4xl uppercase text-center '>parts section</h3>
       <div className='h-1 w-20 rounded-md bg-secondary mx-auto mb-20 mt-4'></div>
-      <div className='grid grid-cols-1 md:grid-cols-2'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {parts.slice(0,3).map(part => <Part part={part}></Part>)}
       </div>
       

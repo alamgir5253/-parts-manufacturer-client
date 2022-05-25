@@ -2,10 +2,10 @@ import React from 'react';
 
 const Blog = () => {
   return (
-    <section className='mb-20'>
+    <section className='mb-10'>
       <h2 className='text-center text-2xl md:text-4xl text-primary font-bold'>Blog Section</h2>
       <div className='h-1 w-20 mb-20 rounded-md bg-secondary mx-auto mt-4'></div>
-      <div className='grid grid-cols-1 md:grid-cols-2  gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 md:m-0 m-4 gap-5'>
         <div  className='bg-base-200 p-4 rounded'>
           <h2 className='p-2 mb-4 text-white font-bold bg-secondary rounded'> How will you improve the performance of a React Application</h2>
           

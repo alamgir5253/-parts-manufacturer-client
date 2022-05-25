@@ -11,8 +11,8 @@ const NewArrivel = () => {
   <div id="item1" className="carousel-item w-full">
   <div className="hero">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={slider1} className="object-cover  rounded-lg " />
-    <div>
+    <img src={slider1} className="object-cover  max-w-sm rounded-lg " />
+    <div  className='max-w-sm'>
       <h1 className="md:text-3xl text-2xl text-secondary font-bold">Bike Engine</h1>
       <p className="py-6 max-w-sm">Abril Flying Auto Parts motorcycle engine assembly apply to for Suzuki Vstrom DL1000 100cc 150cc 200cc.</p>
       <button className="btn text-white btn-primary">Purchase Now</button>
@@ -23,8 +23,8 @@ const NewArrivel = () => {
   <div id="item2" className="carousel-item w-full">
   <div className="hero ">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={slider2} className="object-cover  rounded-lg " />
-    <div>
+    <img src={slider2} className="object-cover max-w-sm rounded-lg " />
+    <div className='max-w-sm'>
       <h1 className="md:text-3xl text-2xl text-secondary font-bold">gear16-16T</h1>
       <p className="py-6 max-w-sm">High quality double spur gear16-16T Engine starter motor gear Dual idle gear is suitable for 200CC</p>
       <button className="btn text-white btn-primary">Purchase Now</button>
@@ -35,8 +35,8 @@ const NewArrivel = () => {
   <div id="item3" className="carousel-item w-full">
   <div className="hero">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={slider3} className="object-cover  rounded-lg" />
-    <div>
+    <img src={slider3} className="object-cover max-w-sm rounded-lg" />
+    <div className='max-w-sm'>
       <h1 className="md:text-3xl text-2xl text-secondary font-bold">face Helmet</h1>
       <p className="py-6 max-w-sm">New Fashion Full Face Helmet Motorbike Manufacturer Motorcycles Helmet Motor Bike Helmet.</p>
       <button className="btn text-white btn-primary">Purchase Now</button>

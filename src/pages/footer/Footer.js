@@ -3,41 +3,18 @@ import { FaFacebook, FaYoutube, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <section>
-      <footer className="footer p-10 bg-neutral  text-neutral-content">
-      <div>
-    
-    <p>Bike Parts Co. </p>
-    <p> Providing reliable parts since 1992</p>
-    <p>contact</p>
-    <p>01871754280</p>
-    <div>
-      <p className='mb-4'>social link</p>
-    <div className='flex justify-center items-center text-3xl gap-4 '>
-      <FaFacebook className='hover:text-secondary' />
-      <FaTwitter className='hover:text-secondary' />
-      <FaYoutube className='hover:text-secondary'/>
+     <footer class="footer footer-center p-10 bg-neutral text-white">
+  <div>
+    <p class="font-bold">
+      Bike Parts Co. <br />Providing Reliable Parts Since 1992
+    </p> 
+  </div> 
+  <div>
+    <div class="grid grid-flow-col gap-4">
+     <FaFacebook className='text-3xl hover:text-secondary'/> 
+      <FaTwitter className='text-3xl hover:text-secondary'/> 
+      <FaYoutube className='text-3xl hover:text-secondary'/>
     </div>
-    </div>
-  </div> 
-  <div className='mx-auto'>
-    <span className="footer-title">Services</span> 
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </div> 
-  <div className='mx-auto'>
-    <span className="footer-title">Company</span> 
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </div> 
-  <div className='mx-auto'>
-    <span className="footer-title">Legal</span> 
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
   </div>
 </footer>
 
