@@ -7,9 +7,9 @@ const Part = ({ part }) => {
     navigate(`/part/${id}`)
   }
   return (
-    <div className="card w-full mx-auto mb-4  shadow-xl">
-      <figure className="px-10 pt-10">
-        <img src={image} alt="" className=" max-w-sm max-h-52 " />
+    <div className="card w-full mx-auto mb-4 shadow-xl">
+      <figure className="px-10  pt-10">
+        <img src={image} alt="" className="  max-w-sm max-h-52 " />
       </figure>
       <div className="card-body ">
         <h2 className="text-secondary text-xl md:text-2xl"><span className='font-bold '>name:</span> {name}</h2>

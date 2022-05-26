@@ -71,8 +71,8 @@ const ManageParts = () => {
       {deleteParts && <><input type="checkbox" id="my-modal-6" className="modal-toggle" />
         <div className="modal modal-bottom sm:modal-middle">
           <div className="modal-box">
-            <h3 className="font-bold text-lg text-accent">Are You Sure To Delete{deleteParts.name}</h3>
-            <p className="py-4 font-bold">{deleteParts.name} is very good parts why delete this</p>
+            <h3 className="font-bold text-center text-lg text-accent">Are You Sure To Delete {deleteParts.name}</h3>
+            <p className="py-4 font-bold text-gray-600 text-center">{deleteParts.name} is very good parts why delete this</p>
             <div className="modal-action">
               <button onClick={() => handleDelete(deleteParts._id)} className="btn bg-accent text-white border-0 btn-xs">delete</button>
               <label htmlFor="my-modal-6" className="btn bg-secondary text-white border-0 btn-xs">cancel</label>
