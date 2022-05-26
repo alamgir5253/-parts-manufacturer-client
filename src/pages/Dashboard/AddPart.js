@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 const AddPart = () => {
   const HandleAddPart = e =>{
     e.preventDefault()
-    // image,name, price,description,minOrder,availableQuantity
     const name = e.target.name.value
     const price = e.target.price.value
     const minOrder = e.target.minOrder.value
@@ -35,8 +34,6 @@ const AddPart = () => {
         toast('data insert to db')
       }
     })
-    // console.log(order);
-  
   }
   return (
     <div>
@@ -75,9 +72,9 @@ const AddPart = () => {
         </div>
         <div class="form-control">
           <label class="label">
-            <span class="label-text">image</span>
+            <span class="label-text">image link</span>
           </label>
-          <input type="text" name='image' placeholder='Enter Address' class="input input-bordered " />
+          <input type="text" name='image' placeholder='Enter image link' class="input input-bordered " />
         </div>
         <div class="form-control mt-6">
           <button type='submit' class="btn text-white btn-primary">Add Part</button>

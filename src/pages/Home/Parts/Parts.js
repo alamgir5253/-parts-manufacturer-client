@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Part from './Part';
-
 const Parts = () => {
-const [parts, setParts] =useState([])
-useEffect(()=>{
-  fetch('https://blooming-brook-62791.herokuapp.com/parts')
-  .then(res => res.json())
-  .then(data => setParts(data))
-},[])
+  const [parts, setParts] = useState([])
+  useEffect(() => {
+    fetch('https://blooming-brook-62791.herokuapp.com/parts')
+      .then(res => res.json())
+      .then(data => setParts(data))
+  }, [])
   return (
     <div className='mb-20'>
       <h3 className=' font-bold text-2xl text-primary md:text-4xl uppercase text-center '>parts section</h3>
@@ -15,7 +14,6 @@ useEffect(()=>{
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {parts.map(part => <Part part={part}></Part>)}
       </div>
-      
     </div>
   );
 };

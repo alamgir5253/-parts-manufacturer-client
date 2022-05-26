@@ -4,11 +4,8 @@ import auth from '../../Firebase.Init';
 import { useForm } from "react-hook-form";
 import Loading from '../../shared/loading/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { async } from '@firebase/util';
 import UseToken from '../Hook/UseToken';
-// import { toast } from 'react-toastify';
-// import useToken from '../Hooks/UseToken';
-
+// import { async } from '@firebase/util';
 const Login = () => {
   
   const { register, formState: { errors }, handleSubmit } = useForm();
@@ -32,20 +29,14 @@ let from = location.state?.from?.pathname || "/";
     error,
   ] = useSignInWithEmailAndPassword(auth);
   const [token] = UseToken(user || guser)
-
- 
   useEffect(()=>{
     if(token){
       navigate(from, { replace: true });
-  
     }
   },[(token)])
-  
-
   if(loading || gloading || sending){
     return <Loading></Loading>
   }
-
   let errorMassage ;
   if(error || gerror)(
     errorMassage = <p className='text-error text-sm font-bold'>{error?.message || gerror?.message}</p>
@@ -63,10 +54,7 @@ let from = location.state?.from?.pathname || "/";
   const onSubmit =  data => {
     console.log(data)
     signInWithEmailAndPassword(data.email, data.password)
-    
   };
-
-
   return (
     <div className=' flex justify-center h-screen items-center'>
       <div className="card w-96 bg-base-100 shadow-xl">

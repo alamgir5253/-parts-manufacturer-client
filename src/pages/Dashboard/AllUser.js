@@ -9,8 +9,6 @@ const AllUser = () => {
       'authorization': `bearer ${localStorage.getItem('access_token')}` 
     }
 
-
-
   }).then(res => res.json()))
   if(isLoading){
   return <Loading />
@@ -25,8 +23,6 @@ const AllUser = () => {
         <th className='bg-primary text-white text-lg'>Serial</th>
         <th className='bg-primary text-white text-lg'>Email</th>
         <th className='bg-primary text-white text-lg'>Make Admin</th>
-       
-        
       </tr>
     </thead>
     <tbody>
@@ -38,9 +34,7 @@ const AllUser = () => {
         user={user}
         
         />)
-    }
-     
-     
+    } 
     </tbody>
   </table>
 </div>

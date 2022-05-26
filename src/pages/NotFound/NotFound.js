@@ -6,9 +6,9 @@ const NotFound = () => {
     <section className=''>
       <div className='flex justify-center flex-col items-center'>
         <img className='rounded-lg' src={notfound} alt="404 not found" />
-        <Link to='/'  className='my-10 btn btn-primary'>go to  Home</Link>
+        <Link to='/' className='my-10 btn btn-primary'>go to  Home</Link>
       </div>
-      
+
     </section>
   );
 };

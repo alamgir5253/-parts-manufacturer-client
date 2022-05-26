@@ -8,7 +8,7 @@ const MyPortfolio = () => {
         <h3 className='text-secondary font-semibold text-lg'><span className='font-bold text-gray-700'>Email: </span>alamgir5253@gmail.com</h3>
         <h4 className='font-bold text-gray-700 mt-4 mb-2 text-xl'>My educational status</h4>
         <p>I have completed my <b>Bachelor of Social Science</b> from <b>Government Titumir College</b>, Dhaka. <br />
-        ( June- 2011-september-2014 )</p>
+          ( June- 2011-september-2014 )</p>
 
 
 
@@ -23,13 +23,13 @@ const MyPortfolio = () => {
         <span className='font-semibold text-gray-700'>MONGODB , </span>
         <h5 className='font-bold text-gray-700 mt-4 text-xl'> There are some link of my live site </h5>
         <p className='font-semibold hover:underline'>
-        <a href="https://dream-auto-warehouse.firebaseapp.com" target='_blank'>dream-auto-warehouse</a>
+          <a href="https://dream-auto-warehouse.firebaseapp.com" target='_blank'>dream-auto-warehouse</a>
         </p>
         <p className='font-semibold hover:underline'>
-        <a href="https://wedding-photographer-3d9e5.firebaseapp.com" target='_blank'>wedding-photographer</a>
+          <a href="https://wedding-photographer-3d9e5.firebaseapp.com" target='_blank'>wedding-photographer</a>
         </p>
         <p className='font-semibold hover:underline'>
-        <a href="https://the-alchemist-assignment-9.netlify.app" target='_blank'>the-alchemist</a>
+          <a href="https://the-alchemist-assignment-9.netlify.app" target='_blank'>the-alchemist</a>
         </p>
 
       </div>

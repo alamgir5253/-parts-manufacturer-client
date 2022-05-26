@@ -9,12 +9,12 @@ import UserReview from './UserReview/UserReview';
 const Home = () => {
   return (
     <div>
-     <Banner />
-     <Parts />
-     <BusinessSummery />
-     <SpecialSection />
-     <UserReview />
-     <NewArrivel />
+      <Banner />
+      <Parts />
+      <BusinessSummery />
+      <SpecialSection />
+      <UserReview />
+      <NewArrivel />
     </div>
   );
 };

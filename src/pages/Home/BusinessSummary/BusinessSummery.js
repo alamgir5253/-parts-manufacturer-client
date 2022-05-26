@@ -1,6 +1,5 @@
 import React from 'react';
-import { BsFillEmojiSmileFill, BsFillPeopleFill,BsGlobe,BsGraphUp } from "react-icons/bs";
-
+import { BsFillEmojiSmileFill, BsFillPeopleFill, BsGlobe, BsGraphUp } from "react-icons/bs";
 const BusinessSummery = () => {
   return (
     <section className='mt-20 mb-20'>
@@ -15,21 +14,20 @@ const BusinessSummery = () => {
           <p className='font-bold text-2xl md:text-4xl text-accent'>1000+</p>
           <p className='text-xl text-primary'>Our Happy Client</p>
         </div>
-
         <div className='mx-auto mb-4'>
-          <div><BsFillPeopleFill  className='text-secondary text-8xl mb-4 mx-auto' /></div>
-          <h2  className='font-bold text-2xl md:text-4xl text-accent'>9999+</h2>
+          <div><BsFillPeopleFill className='text-secondary text-8xl mb-4 mx-auto' /></div>
+          <h2 className='font-bold text-2xl md:text-4xl text-accent'>9999+</h2>
           <p className='text-xl text-primary'>Customer Feedback</p>
         </div>
 
         <div className='mx-auto mb-4'>
-          <div><BsGlobe  className='text-secondary text-8xl mb-4 mx-auto' /></div>
+          <div><BsGlobe className='text-secondary text-8xl mb-4 mx-auto' /></div>
           <h2 className='font-bold text-2xl md:text-4xl text-accent'>100+</h2>
           <p className='text-xl text-primary'>services countrys</p>
         </div>
 
         <div className='mx-auto mb-4'>
-          <div><BsGraphUp  className='text-secondary text-8xl mb-4 mx-auto' /></div>
+          <div><BsGraphUp className='text-secondary text-8xl mb-4 mx-auto' /></div>
           <h2 className='font-bold text-2xl md:text-4xl text-accent'>90000+</h2>
           <p className='text-xl text-primary'>Annual Revenue</p>
         </div>
