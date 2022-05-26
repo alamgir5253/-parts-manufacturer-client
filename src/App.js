@@ -20,6 +20,7 @@ import RequireAdmin from './shared/RequireAdmin';
 import AllOrders from './pages/Dashboard/AllOrders';
 import ManageParts from './pages/Dashboard/ManageParts';
 import AddPart from './pages/Dashboard/AddPart';
+import Payment from './pages/Dashboard/Payment';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route index element={<MyOrder />}></Route>
           <Route path='review' element={<Review />}></Route>
           <Route path='myprofile' element={<MyProfile />}></Route>
+          <Route path='payment' element={<Payment />}></Route>
           <Route path='alluser' element={<RequireAdmin><AllUser /></RequireAdmin>}></Route>
           <Route path='allorder' element={<RequireAdmin><AllOrders /></RequireAdmin>}></Route>
           <Route path='manageparts' element={<RequireAdmin><ManageParts /></RequireAdmin>}></Route>

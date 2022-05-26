@@ -4,7 +4,7 @@ import auth from '../../Firebase.Init';
 import { useForm } from "react-hook-form";
 import Loading from '../../shared/loading/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { async } from '@firebase/util';
+// import { async } from '@firebase/util';
 import UseToken from '../Hook/UseToken';
 // import { toast } from 'react-toastify';
 
@@ -28,7 +28,7 @@ let from = location.state?.from?.pathname || "/";
     user,
     loading,
     error,
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
   const [token] = UseToken(user || guser)
  
   useEffect(()=>{
@@ -61,7 +61,7 @@ let from = location.state?.from?.pathname || "/";
     console.log(data)
     await createUserWithEmailAndPassword(data.email, data.password)
     await updateProfile({ displayName : data.name})
-    navigate('/')
+    
 
     // navigate(from, { replace: true });
   };

@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../Firebase.Init';
 
 const MyOrder = () => {
@@ -42,9 +42,11 @@ const MyOrder = () => {
         <th className='text-white bg-secondary'>user</th> 
         <th className='text-white bg-secondary'>email</th> 
         <th className='text-white bg-secondary'>Name</th> 
-        <th className='text-white bg-secondary'>quantity</th>
-        <th className='text-white bg-secondary'>phone</th> 
-        <th className='text-white bg-secondary'>address</th> 
+        <th className='text-white bg-secondary'>Quantity</th>
+        <th className='text-white bg-secondary'>Phone</th> 
+        <th className='text-white bg-secondary'>Address</th> 
+        <th className='text-white bg-secondary'>pay</th> 
+        <th className='text-white bg-secondary'>Delete Order</th> 
       </tr>
     </thead> 
     <tbody>
@@ -57,6 +59,8 @@ const MyOrder = () => {
         <td>{order.quantity}</td> 
         <td>{order.phone}</td> 
         <td>{order.address}</td> 
+        <td><Link to='/dashboard/payment' className='btn btn-xs bg-secondary text-white border-0'>Pay</Link></td>
+        <td><button className='btn btn-xs bg-accent text-white border-0'>delete</button></td>
         
         
       </tr>)

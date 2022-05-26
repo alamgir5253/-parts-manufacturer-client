@@ -25,7 +25,7 @@ const AllUser = () => {
         <th className='bg-primary text-white text-lg'>Serial</th>
         <th className='bg-primary text-white text-lg'>Email</th>
         <th className='bg-primary text-white text-lg'>Make Admin</th>
-        <th className='bg-primary text-white text-lg'>Delete User</th>
+       
         
       </tr>
     </thead>
