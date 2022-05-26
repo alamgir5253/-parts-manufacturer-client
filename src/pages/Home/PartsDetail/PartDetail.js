@@ -40,14 +40,14 @@ const PartDetail = () => {
       .then(data => console.log(data))
   }
   return (
-    <div class="hero min-h-screen ">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="card w-full mx-auto mb-4  ">
-          <figure class="px-10 pt-10">
-            <img src={part.image} alt="Shoes" class="max-w-sm max-h-52   " />
+    <div className="hero min-h-screen ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="card w-full mx-auto mb-4  ">
+          <figure className="px-10 pt-10">
+            <img src={part.image} alt="Shoes" className="max-w-sm max-h-52   " />
           </figure>
-          <div class="card-body ">
-            <h2 class="text-secondary text-xl md:text-2xl"><span className='font-bold '>name</span> {part.name}</h2>
+          <div className="card-body ">
+            <h2 className="text-secondary text-xl md:text-2xl"><span className='font-bold '>name</span> {part.name}</h2>
             <p className='text-primary text-xl'><span>price</span> {part.price}</p>
             <p className='text-gray-700 font-bold text-lg md:text-xl'><span>minimum order quantity</span> {part.minOrder}</p>
             <p className='text-gray-700 font-bold text-lg md:text-xl'><span>available Quantity</span> {part.availableQuantity}</p>
@@ -55,48 +55,48 @@ const PartDetail = () => {
 
           </div>
         </div>
-        <div class="card flex-shrink-0 mb-4  shadow-2xl bg-base-100">
-          <div class="card-body">
+        <div className="card flex-shrink-0 mb-4  shadow-2xl bg-base-100">
+          <div className="card-body">
             <form onSubmit={HandleOrder}>
               <p className='text-center text-xl font-bold text-primary uppercase'>purchase Form</p>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">name</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">name</span>
                 </label>
-                <input type="text" disabled value={user?.displayName || ''} class="input input-bordered text-xl placeholder-info " />
+                <input type="text" disabled value={user?.displayName || ''} className="input input-bordered text-xl placeholder-info " />
               </div>
-              <div class="form-control ">
-                <label class="label">
-                  <span class="label-text">Email</span>
+              <div className="form-control ">
+                <label className="label">
+                  <span className="label-text">Email</span>
                 </label>
-                <input type="text" disabled value={user?.email || ''} class="input input-bordered text-xl placeholder-info " />
+                <input type="text" disabled value={user?.email || ''} className="input input-bordered text-xl placeholder-info " />
               </div>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Product Name</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Product Name</span>
                 </label>
-                <input type="text" disabled value={part.name} class="input input-bordered text-xl placeholder-info " />
+                <input type="text" disabled value={part.name} className="input input-bordered text-xl placeholder-info " />
               </div>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">quantity</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">quantity</span>
                 </label>
-                <input type="number" name='quantity' placeholder='quantity' class="input input-bordered" />
+                <input type="number" name='quantity' placeholder='quantity' className="input input-bordered" />
               </div>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Phone Number</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Phone Number</span>
                 </label>
-                <input type="text" name='phone' placeholder='phone' class="input input-bordered" />
+                <input type="text" name='phone' placeholder='phone' className="input input-bordered" />
               </div>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">address</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">address</span>
                 </label>
-                <input type="text" name='address' placeholder='Enter Address' class="input input-bordered " />
+                <input type="text" name='address' placeholder='Enter Address' className="input input-bordered " />
               </div>
-              <div class="form-control mt-6">
-                <button type='submit' class="btn text-white btn-primary">purchase</button>
+              <div className="form-control mt-6">
+                <button type='submit' className="btn text-white btn-primary">purchase</button>
               </div>
             </form>
           </div>

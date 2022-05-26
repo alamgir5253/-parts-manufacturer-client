@@ -3,14 +3,14 @@ import { FaFacebook, FaYoutube, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <section>
-      <footer class="footer footer-center p-10 bg-neutral text-white">
+      <footer className="footer footer-center p-10 bg-neutral text-white">
         <div>
-          <p class="font-bold">
+          <p className="font-bold">
             Bike Parts Co. <br />Providing Reliable Parts Since 1992
           </p>
         </div>
         <div>
-          <div class="grid grid-flow-col gap-4">
+          <div className="grid grid-flow-col gap-4">
             <FaFacebook className='text-3xl hover:text-secondary' />
             <FaTwitter className='text-3xl hover:text-secondary' />
             <FaYoutube className='text-3xl hover:text-secondary' />

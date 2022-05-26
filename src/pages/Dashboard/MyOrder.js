@@ -19,7 +19,6 @@ const MyOrder = () => {
 
       })
         .then(res => {
-          console.log('res', res);
 
           if (res.status === 403 || res.status === 401) {
             signOut(auth);

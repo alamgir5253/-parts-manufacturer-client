@@ -36,48 +36,48 @@ const MyProfile = () => {
   }
   return (
     <section className='mb-20'>
-      <div class="card flex-shrink-0   shadow-2xl bg-base-100">
-        <div class="card-body">
+      <div className="card flex-shrink-0   shadow-2xl bg-base-100">
+        <div className="card-body">
           <form onSubmit={HandleProfile}>
             <p className='text-center text-xl font-bold text-secondary uppercase'>profile Form</p>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">name</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">name</span>
               </label>
-              <input type="text" disabled value={user?.displayName || ''} class="input input-bordered text-xl  " />
+              <input type="text" disabled value={user?.displayName || ''} className="input input-bordered text-xl  " />
             </div>
-            <div class="form-control ">
-              <label class="label">
-                <span class="label-text">Email</span>
+            <div className="form-control ">
+              <label className="label">
+                <span className="label-text">Email</span>
               </label>
-              <input type="text" disabled value={user?.email || ''} class="input input-bordered text-xl  " />
+              <input type="text" disabled value={user?.email || ''} className="input input-bordered text-xl  " />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">education</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">education</span>
               </label>
-              <input type="text" name='education' placeholder='education' class="input input-bordered text-xl  placeholder-secondary" />
+              <input type="text" name='education' placeholder='education' className="input input-bordered text-xl  placeholder-secondary" />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">location</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">location</span>
               </label>
-              <input type="text" name='location' placeholder='location' class="input input-bordered placeholder-secondary" />
+              <input type="text" name='location' placeholder='location' className="input input-bordered placeholder-secondary" />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Phone Number</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Phone Number</span>
               </label>
-              <input type="text" name='phone' placeholder='phone' class="input input-bordered placeholder-secondary" />
+              <input type="text" name='phone' placeholder='phone' className="input input-bordered placeholder-secondary" />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Linkedin</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Linkedin</span>
               </label>
-              <input type="text" name='linkedin' placeholder='Enter Link' class="input input-bordered placeholder-accent" />
+              <input type="text" name='linkedin' placeholder='Enter Link' className="input input-bordered placeholder-accent" />
             </div>
-            <div class="form-control mt-6">
-              <button type='submit' class="btn text-white btn-primary">submit</button>
+            <div className="form-control mt-6">
+              <button type='submit' className="btn text-white btn-primary">submit</button>
             </div>
           </form>
         </div>

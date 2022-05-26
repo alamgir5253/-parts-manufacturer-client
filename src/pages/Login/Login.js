@@ -208,14 +208,14 @@ export default Login;
 //             <span className="label-text">Email</span>
 //           </label>
 //           <input type="text" placeholder="email" className="input input-bordered" />
-//           <span class="label-text-alt">Alt label</span>
+//           <span className="label-text-alt">Alt label</span>
 //         </div>
 //         <div className="form-control">
 //           <label className="label">
 //             <span className="label-text">Password</span>
 //           </label>
 //           <input type="password" placeholder="password" className="input input-bordered" />
-//           <span class="label-text-alt">Alt label</span>
+//           <span className="label-text-alt">Alt label</span>
 //           <label className="label">
 //             <a href="#" className="label-text-alt link link-hover text-accent font-bold">Forgot password?</a>
 //           </label>
@@ -225,8 +225,8 @@ export default Login;
 //         </div>
 //       <p className='text-xs mt-2 '>don't have an account? <Link className='text-info' to='/signup'>please signup</Link></p>
 //       </form>
-//       <div class="divider">OR</div>
-//       <button onClick={HandleGoogleLogin} class="btn btn-outline btn-secondary">Button</button>
+//       <div className="divider">OR</div>
+//       <button onClick={HandleGoogleLogin} className="btn btn-outline btn-secondary">Button</button>
 //       {googleError}
 //       </div>
 //     </div>

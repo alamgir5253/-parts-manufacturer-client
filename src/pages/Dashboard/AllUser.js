@@ -16,8 +16,8 @@ const AllUser = () => {
 
   return (
     <section className='mb-20'>
-      <div class="overflow-x-auto">
-  <table class="table w-full">
+      <div className="overflow-x-auto">
+  <table className="table w-full">
     <thead  >
       <tr>
         <th className='bg-primary text-white text-lg'>Serial</th>

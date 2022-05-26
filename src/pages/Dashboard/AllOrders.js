@@ -10,8 +10,8 @@ const AllOrders = () => {
   }, [])
   return (
     <section className='mb-20'>
-      <div class="overflow-x-auto w-full">
-        <table class="table w-full">
+      <div className="overflow-x-auto w-full">
+        <table className="table w-full">
           <thead>
             <tr>
               <th className='bg-primary text-white text-lg'>no</th>

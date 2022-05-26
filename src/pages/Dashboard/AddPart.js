@@ -40,44 +40,44 @@ const AddPart = () => {
       
       <form onSubmit={HandleAddPart} className='max-w-xs mx-auto' >
           <p className='text-center text-xl font-bold text-primary uppercase'>Add Parts</p>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">parts name</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">parts name</span>
           </label>
-          <input type="text" name='name'  placeholder='name' class="input input-bordered  " />
+          <input type="text" name='name'  placeholder='name' className="input input-bordered  " />
         </div>
-        <div class="form-control ">
-          <label class="label">
-            <span class="label-text">price</span>
+        <div className="form-control ">
+          <label className="label">
+            <span className="label-text">price</span>
           </label>
-          <input type="text"  placeholder='price' name='price' class="input input-bordered  " />
+          <input type="text"  placeholder='price' name='price' className="input input-bordered  " />
         </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">minOrder</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">minOrder</span>
           </label>
-          <input name='minOrder' placeholder='minOrder' type="text"class="input input-bordered " />
+          <input name='minOrder' placeholder='minOrder' type="text"className="input input-bordered " />
         </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">availableQuantity</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">availableQuantity</span>
           </label>
-          <input type="text" name='availableQuantity' placeholder='availableQuantity' class="input input-bordered" />
+          <input type="text" name='availableQuantity' placeholder='availableQuantity' className="input input-bordered" />
         </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">description</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">description</span>
           </label>
-          <input type="text" name='description' placeholder='description' class="input input-bordered" />
+          <input type="text" name='description' placeholder='description' className="input input-bordered" />
         </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">image link</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">image link</span>
           </label>
-          <input type="text" name='image' placeholder='Enter image link' class="input input-bordered " />
+          <input type="text" name='image' placeholder='Enter image link' className="input input-bordered " />
         </div>
-        <div class="form-control mt-6">
-          <button type='submit' class="btn text-white btn-primary">Add Part</button>
+        <div className="form-control mt-6">
+          <button type='submit' className="btn text-white btn-primary">Add Part</button>
         </div>
         </form>
     </div>

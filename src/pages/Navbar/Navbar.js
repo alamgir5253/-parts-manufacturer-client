@@ -25,7 +25,9 @@ const Navbar = () => {
               {user ? <> <li><NavLink to='dashboard'>Dashboard</NavLink></li></> : <li><NavLink to='/login' className='mr-4'>Login</NavLink></li>}
               {user ? <><li className='btn mr-4 btn-ghost'>{user?.displayName}</li> <li className='btn mr-4 btn-ghost' onClick={logout}>signout</li></> : ''}
               <li><NavLink to='signup' className='mr-4'>SignUp</NavLink></li>
+  
 
+  
             </ul>
           </div>
           <Link to='/' className=" font-bold text-secondary  text-xs md:text-xl">Bike Parts Co. </Link>
