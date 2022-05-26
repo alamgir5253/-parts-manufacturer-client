@@ -61,10 +61,9 @@ const MyOrder = () => {
         <td>{order.address}</td> 
         <td><Link to='/dashboard/payment' className='btn btn-xs bg-secondary text-white border-0'>Pay</Link></td>
         <td><button className='btn btn-xs bg-accent text-white border-0'>delete</button></td>
-        
-        
       </tr>)
      }
+     
     </tbody> 
   
   </table>

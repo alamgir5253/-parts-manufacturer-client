@@ -33,17 +33,14 @@ const handleDelete = id =>{
     <section className=''>
       <div class="overflow-x-auto w-full">
   <table class="table w-full">
-    {/* <!-- head --> */}
     <thead>
       <tr>
-        
         <th  className='bg-primary text-white text-lg'>image</th>
         <th  className='bg-primary text-white text-lg'>name</th>
         <th  className='bg-primary text-white text-lg'>Minimum Order</th>
         <th  className='bg-primary text-white text-lg'>availableQuantity</th>
         <th  className='bg-primary text-white text-lg'>price</th>
         <th  className='bg-primary text-white text-lg'>delete item</th>
-        
       </tr>
     </thead>
     <tbody>
@@ -73,12 +70,10 @@ const handleDelete = id =>{
           </th>
         </tr>)
       }
-      
       </tbody>
-    
   </table>
 </div>
-      {/* model */}
+      {/* model part start*/}
 
 {deleteParts &&<><input type="checkbox" id="my-modal-6" class="modal-toggle" />
 <div class="modal modal-bottom sm:modal-middle">
