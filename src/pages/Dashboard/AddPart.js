@@ -20,16 +20,21 @@ const AddPart = () => {
       image,
       
     }
-    fetch('http://localhost:5000/parts',{
+    fetch('https://blooming-brook-62791.herokuapp.com/parts',{
       method:'POST',
       headers:{
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'authorization': `bearer ${localStorage.getItem('access_token')}`
       },
       body: JSON.stringify(part)
     })
     .then(res =>res.json())
-    .then(data => console.log(data))
-    // toast('inserted data to db')
+    .then(data => {
+      if(data.insertedId){
+
+        toast('data insert to db')
+      }
+    })
     // console.log(order);
   
   }

@@ -21,9 +21,6 @@ const UseToken = user =>{
         localStorage.setItem('access_token', accessToken)
         setToken(accessToken)
       })
-
-
-      toast('inserted user to db')
       
 
     }

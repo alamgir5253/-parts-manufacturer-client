@@ -25,7 +25,7 @@ const Review = () => {
 
 
   return (
-    <section className='mb-20'>
+    <section className=''>
       <div class="card flex-shrink-1 max-w-sm mx-auto md:mt-20 mt-4  shadow-2xl bg-base-100">
         <div class="card-body">
           <form onSubmit={HandleReview}>
