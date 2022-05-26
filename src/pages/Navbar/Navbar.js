@@ -30,7 +30,7 @@ const Navbar = () => {
   
             </ul>
           </div>
-          <Link to='/' className=" font-bold text-secondary  text-lg md:text-xl">Bike Parts Co. </Link>
+          <Link to='/' className=" font-bold text-secondary  text-xs md:text-xl">Bike Parts Co. </Link>
         </div>
 
         <div className="navbar-center hidden lg:flex">
