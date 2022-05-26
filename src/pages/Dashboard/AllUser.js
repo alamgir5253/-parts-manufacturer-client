@@ -22,10 +22,10 @@ const AllUser = () => {
   <table class="table w-full">
     <thead  >
       <tr>
-        <th className='bg-primary'>Serial</th>
-        <th className='bg-primary'>Email</th>
-        <th className='bg-primary'>Make Admin</th>
-        <th className='bg-primary'>Delete User</th>
+        <th className='bg-primary text-white text-lg'>Serial</th>
+        <th className='bg-primary text-white text-lg'>Email</th>
+        <th className='bg-primary text-white text-lg'>Make Admin</th>
+        <th className='bg-primary text-white text-lg'>Delete User</th>
         
       </tr>
     </thead>

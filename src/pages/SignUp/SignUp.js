@@ -71,7 +71,7 @@ let from = location.state?.from?.pathname || "/";
     <div className=' flex justify-center h-screen items-center'>
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
-          <h2 className="text-center font-bold">SignUp</h2>
+          <h2 className="text-center text-2xl font-bold">Sign Up</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -155,11 +155,11 @@ let from = location.state?.from?.pathname || "/";
             </div>
             {errorMassage}
             {/* <p className='underline text-gray-800 cursor-pointer mt-2' onClick={ ResetPassword}>forgate password?</p> */}
-            <input className=" input-bordered w-full max-w-xs btn btn-primary  mt-4" type="submit" value='SignUp' />
+            <input className=" input-bordered text-white w-full max-w-xs btn btn-primary  mt-4" type="submit" value='Sign Up' />
           </form>
           <p>Already  have an account? <Link className='text-primary' to='/login'>please login</Link> </p>
           <div className="divider">OR</div>
-          <button onClick={() => signInWithGoogle()} className="btn btn-outline btn-secondary">Login With Google</button>
+          <button onClick={() => signInWithGoogle()} className="btn btn-outline text-white btn-secondary">continue With Google</button>
 
         </div>
       </div>

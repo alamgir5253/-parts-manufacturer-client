@@ -30,12 +30,12 @@ const AllOrders = () => {
       {
       orders.map((order, index) =><tr className='hover' key={order._id}>
         <th>{index + 1}</th>
-        <td>{order.name}</td>
-        <td>{order.user}</td>
-        <td>{order.email}</td>
-        <td>{order.phone}</td>
-        <td>{order.address}</td>
-        <td>{order.quantity}</td>
+        <td className='text-primary'>{order.name}</td>
+        <td className='text-secondary'>{order.user}</td>
+        <td className='text-primary' >{order.email}</td>
+        <td className='text-secondary'>{order.phone}</td>
+        <td className='text-primary'>{order.address}</td>
+        <td className='text-accent font-bold'>{order.quantity}</td>
       </tr>)
       }
       

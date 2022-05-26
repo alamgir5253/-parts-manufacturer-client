@@ -43,7 +43,6 @@ const PartDetail = () => {
      })
      .then(res =>res.json())
      .then(data => console.log(data))
-     toast('inserted data to db')
    
    }
 
@@ -53,21 +52,21 @@ const PartDetail = () => {
   <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
   <div class="card w-full mx-auto mb-4  ">
   <figure class="px-10 pt-10">
-    <img src={part.image} alt="Shoes" class="rounded-xl max-w-sm max-h-52 w-full object-fill" />
+    <img src={part.image} alt="Shoes" class="max-w-sm max-h-52   " />
   </figure>
   <div class="card-body ">
-    <h2 class="text-primary text-3xl"><span className='font-bold '>name</span> {part.name}</h2>
-    <p className='text-accent text-xl'><span>price</span> {part.price}</p>
-    <p className='text-secondary text-xl'><span>minimum order quantity</span> {part.minOrder}</p>
-    <p className='text-secondary text-xl'><span>available Quantity</span> {part.availableQuantity}</p>
-    <p className='text-neutral'><span>description</span> {part.description}</p>
+    <h2 class="text-secondary text-xl md:text-2xl"><span className='font-bold '>name</span> {part.name}</h2>
+    <p className='text-primary text-xl'><span>price</span> {part.price}</p>
+    <p className='text-gray-700 font-bold text-lg md:text-xl'><span>minimum order quantity</span> {part.minOrder}</p>
+    <p className='text-gray-700 font-bold text-lg md:text-xl'><span>available Quantity</span> {part.availableQuantity}</p>
+    <p className='text-gray-500 font-semibold'><span className='font-bold text-gray-700'>description</span> {part.description}</p>
 
   </div>
 </div>
-    <div class="card flex-shrink-0   shadow-2xl bg-base-100">
+    <div class="card flex-shrink-0 mb-4  shadow-2xl bg-base-100">
       <div class="card-body">
         <form onSubmit={HandleOrder}>
-          <p className='text-center text-xl text-primary uppercase'>purchase Form</p>
+          <p className='text-center text-xl font-bold text-primary uppercase'>purchase Form</p>
         <div class="form-control">
           <label class="label">
             <span class="label-text">name</span>
@@ -105,7 +104,7 @@ const PartDetail = () => {
           <input type="text" name='address' placeholder='Enter Address' class="input input-bordered " />
         </div>
         <div class="form-control mt-6">
-          <button type='submit' class="btn btn-primary">purchase</button>
+          <button type='submit' class="btn text-white btn-primary">purchase</button>
         </div>
         </form>
       </div>

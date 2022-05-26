@@ -63,7 +63,7 @@ let from = location.state?.from?.pathname || "/";
   const onSubmit =  data => {
     console.log(data)
     signInWithEmailAndPassword(data.email, data.password)
-    // navigate(from, { replace: true });
+    
   };
 
 
@@ -71,7 +71,7 @@ let from = location.state?.from?.pathname || "/";
     <div className=' flex justify-center h-screen items-center'>
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
-          <h2 className="text-center font-bold">Login</h2>
+          <h2 className="text-center  text-2xl font-bold">Log in</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -132,9 +132,9 @@ let from = location.state?.from?.pathname || "/";
             </div>
             {errorMassage}
             {/* <p className='underline text-gray-800 cursor-pointer mt-2' onClick={ ResetPassword}>forgate password?</p> */}
-            <input className=" input-bordered w-full max-w-xs btn btn-primary  mt-4" type="submit" value='Login' />
+            <input className=" input-bordered w-full text-white max-w-xs btn btn-primary  mt-4" type="submit" value='Log in' />
           </form>
-          <p>don't have an account? <Link className='text-primary' to='/signup'> please SignUp</Link> </p>
+          <p>don't have an account? <Link className='text-primary' to='/signup'> please Sign Up</Link> </p>
           <div className="divider">OR</div>
           <button onClick={() => signInWithGoogle()} className="btn btn-outline btn-secondary">continue With Google</button>
 

@@ -38,13 +38,13 @@ const MyOrder = () => {
   <table className="table table-compact w-full">
     <thead>
       <tr>
-        <th></th> 
-        <th>user</th> 
-        <th>email</th> 
-        <th>Name</th> 
-        <th>quantity</th>
-        <th>phone</th> 
-        <th>address</th> 
+        <th className='text-white bg-secondary'>no.</th> 
+        <th className='text-white bg-secondary'>user</th> 
+        <th className='text-white bg-secondary'>email</th> 
+        <th className='text-white bg-secondary'>Name</th> 
+        <th className='text-white bg-secondary'>quantity</th>
+        <th className='text-white bg-secondary'>phone</th> 
+        <th className='text-white bg-secondary'>address</th> 
       </tr>
     </thead> 
     <tbody>
@@ -62,17 +62,7 @@ const MyOrder = () => {
       </tr>)
      }
     </tbody> 
-    <tfoot>
-    <tr>
-        <th></th> 
-        <th>user</th> 
-        <th>email</th> 
-        <th>Name</th> 
-        <th>quantity</th>
-        <th>phone</th> 
-        <th>address</th> 
-      </tr>
-    </tfoot>
+  
   </table>
 </div>
       

@@ -26,12 +26,12 @@ const Review = () => {
 
   return (
     <section className='mb-20'>
-      <div class="card flex-shrink-1 max-w-sm mx-auto   shadow-2xl bg-base-100">
+      <div class="card flex-shrink-1 max-w-sm mx-auto md:mt-20 mt-4  shadow-2xl bg-base-100">
         <div class="card-body">
           <form onSubmit={HandleReview}>
-            <p className='text-center mb-4 text-xl text-primary uppercase'>review Form</p>
+            <p className='text-center mb-4 text-xl font-bold  text-secondary uppercase'>review Form</p>
             <div class="form-control">
-            <select name='rating' class="select select-primary w-full max-w-xs">
+            <select name='rating' class="select select-secondary w-full max-w-xs">
               <option disabled selected>What is your rating?</option>
               <option>1</option>
               <option>2</option>
@@ -41,10 +41,10 @@ const Review = () => {
             </select></div>
 
             <div className='form-control mt-4'>
-            <textarea name='review' class="textarea textarea-info" placeholder="Bio"></textarea>
+            <textarea name='review' class="textarea textarea-secondary" placeholder="description"></textarea>
             </div>
             <div class="form-control mt-6">
-              <button type='submit' class="btn btn-primary">purchase</button>
+              <button type='submit' class="btn text-white btn-primary">submit</button>
             </div>
           </form>
         </div>
